@@ -1,0 +1,91 @@
+body, html {
+	/** https://loading.io/color/feature/StarWars-Yoda **/
+  /**background: linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);**/
+  background: linear-gradient(to right, #616640, #75934e, #75934e, #616640);
+	margin: 0;
+	font-family: "Segoe UI","Lucida Grande",Helvetica,FontAwesome,sans-serif;
+	color: #dde6d0;
+  text-align: center;
+  list-style-type: none;
+}
+
+#app {
+  box-sizing: border-box;
+	padding: 50px 0 40px 0;
+	width: 800px;
+	margin: auto;
+	height: 100%;
+	background-color: rgba(0,0,0,0.2);
+}
+
+#topbar {
+  width: 800px;
+	height: 50px;
+	overflow: hidden;
+	position: fixed;
+	background-color: rgba(0,0,0,0.1);
+  font-size: 2.3em;
+  left: 50%;
+  top: 0%;
+  transform: translateX(-50%);
+}
+
+#app ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 5px;
+}
+
+#app li > span {
+	display: block;
+	font-style: italic;
+	font-weight: bold;
+}
+
+#app .fromyou {
+	text-align: right;
+}
+
+#app .frombot {
+	text-align: left;
+}
+
+#app .iswriting {
+	text-align: left;
+	font-style: italic;
+}
+
+#app #prevmsglist {
+  color: #b3c898;
+  padding: 0 15px;
+}
+
+#app #msglist {
+  padding: 0 15px;
+}
+
+#app #prevmsg {
+	border-top: 1px solid #b3c898;
+	margin: 5px;
+	font-style: italic;
+  font-size: 0.9em;
+	color: #b3c898;
+}
+
+#app #sendmsg {
+  width: 800px;
+	height: 50px;
+	overflow: hidden;
+	position: fixed;
+  font-size: 2.3em;
+  left: 50%;
+  bottom: 0%;
+  transform: translateX(-50%);
+}
+
+#app #sendmsg input {
+	width: 100%;
+	height: 40px;
+	font-size: 0.5em;
+	padding: 0 10px;
+}
