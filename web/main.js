@@ -99,7 +99,7 @@ Vue.component('SendMessageForChat', {
 	template: `
 	<div id="sendmsg">
 		<form @submit.prevent="send">
-			<input type="text" v-model="newMessage" placeholder="Type something and press Enter to send" autocomplete="off">
+			<input type="text" v-model="newMessage" autofocus placeholder="Type something and press Enter to send" autocomplete="off">
 		  <!-- <button><i class="fas fa-paper-plane"></i></button> -->
 		</form>
 	</div>
@@ -109,7 +109,6 @@ Vue.component('SendMessageForChat', {
 			newMessage: ""
 		}
 	},
-  props: ['messages'],
   methods: {
     send() {
       if (this.newMessage) {
